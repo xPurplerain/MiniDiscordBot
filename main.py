@@ -29,6 +29,9 @@ async def on_ready():
 
 @client.group(invoke_without_command=True)
 async def help(ctx):
+    await ctx.send(".cc .clear - Leert den Chat")
+    await ctx.send(".ms .ping - Zeigt dir deinen Ping an")
+    await ctx.send(".help - Zeigt dir diesen Command an")
 
 @client.command()
 async def ping(ctx):
